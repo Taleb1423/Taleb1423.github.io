@@ -1,62 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Personal Portfolio Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eadda1f58a.js" crossorigin="anonymous"></script>
+    
 </head>
+<body> 
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/T.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href='#'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#services'>Services</a></li>
+                <li><a href='#portfolio'>Portfolio</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
 
-<body>
-  <!-- PAGE ABOUT -->
-  <header id="about">
-    <nav id="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+        <div class="header-text"> 
+            <h1>Hello, Iam <span>Taleb</span> <br> El Houseiny</h1>
+            <br>
+            <!-- <p class="lead"><em> Intrested in:  
+                <ul class="ls"> 
+                  <li>Coding</li> 
+                  <li>Robotics</li> 
+                  <li>Machine Learning</li> 
+                  
+                </ul></em></p> -->
 
-    <div id="welcome-section" class="container">
-      <h1 id="title">Taleb El Housseiny</h1>
-      <p class="lead"><em> Intrested in:  
-        <ul class="ls"> 
-          <li>Coding</li> 
-          <li>Robotics</li> 
-          <li>Machine Learning</li> 
-          
-        </ul></em></p>
+        </div>
+
     </div>
 
-  </header>
+    </div>
 
-  
-  <!-- CONTACT SECTION -->
-  <section id="contact">
+    <!--------------about--------------->
+
+    <div id="about" style="text-align: center;">
+        <div class="container" style="text-align: center;">
+            <div class="row" style="text-align: center;">
+
+                <div style="text-align: center;">
+                    <h1 class="sub-title" style="text-align: center;">About</h1>
+                    <p class="AAA"> I am Taleb Housseiny, I am Final year Computer Engineering student at Lebanese American University, </p>
+                    <p class="AAA">Connect with me on Linkedin for more tech topics in Software Development - Robotics Deveopment - AI - Machine Learning - Cloud Computing and more  </p>
+                    
+                    <div class="tab-titles" style="text-align: center;">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience" style="text-align: center;">
+                        <ul>
+                            <li><span>2024 - Present</span><br> IT Assistant at Lebanese American University</li>
+                            <li><span>2019 - 2019</span><br> IT Internship at Compusun Technology</li>
+                            <!-- <li><span>2023 - Present</span><br> Designing Web/App interfaces</li> -->
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="skills" style="text-align: center;">
+                        <ul>
+                            <li><span>Python</span><br> Django - Flask</li>
+                            <li><span>JavaScript</span><br> Nodejs - Reactjs</li>
+                            <li><span>C++</span><br> Unreal Engine 5</li>
+                            <li><span>C#</span><br> .Net6</li>
+                            <!-- <li><span>Java</span> -->
+                        </ul>
+                    </div>
+
+                   <div class="tab-contents" id="education" style="text-align: center;">
+                        <ul>
+                            <li><span>2020 - 2025</span><br> Lebanese American University</li>
+                            <!-- <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li> -->
+                        </ul>
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center;">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p> Develop full stack web applications, mainly for buissnesses</p>
+                    <a href="#contact" style="color: rgb(231, 190, 138);">Contact Me</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Mobile Development</h2>
+                    <p> Develop mobile applications, that are mainly used in Internet of Things Projects</p>
+                    <a href="#contact" style="color: rgb(231, 190, 138);">Contact Me</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Robot Development</h2>
+                    <p> Develop general purposes robots, according to customer requirments</p>
+                    <a href="#contact" style="color: rgb(231, 190, 138);">Contact Me</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!---------------My work--------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center;">Projects</h1>
+
+
+
+        <div class="work-list">
+
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/me.png" class="iii">
+                <div class="layer">
+                    <h3>Maintenance Service Application</h3>
+                    <p> Used to facilitate the process of electronics product maintenance</p>
+                    <a target="_blank" href="https://github.com/Taleb1423"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png" class="iii">
+                <div class="layer">
+                    <h3>Movies Web Application with UnSupervised Clustering Technique</h3>
+                    <p> Cluster (group) movies according to a specific reference identified by user</p>
+                    <a target="_blank" href="https://github.com/Taleb1423"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tt.png" class="iii">
+                <div class="layer">
+                    <h3>Full functionality Robot car</h3>
+                    <p> Robot car with the ability to drive on-Road and off-Road and take pictures</p>
+                    <a target="_blank" href="https://github.com/Taleb1423"><i class="fa-solid fa-link"></i></a>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png" class="iii">
+                <div class="layer">
+                    <h3>Bus Registration Web app</h3>
+                    <p> Users were able to book the the bus they need from the web app to travel across Lebanon</p>
+                    <a target="_blank" href="https://github.com/Taleb1423"><i class="fa-solid fa-link"></i></a>
+                </div>
+        </div>
+           
+        </div>
+
+
+            <div class="work-list hide" id="targetElement">
+
+            <div class="work" >
+                <img src="images/work-2.png" class="iii">
+                <div class="layer">
+                    <h3>Super market Inventory System</h3>
+                    <p> Used to manage an inventory system inside a super market and analyze profit</p>
+                    <a target="_blank" href="https://github.com/Taleb1423"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work" >
+                <img src="images/al.png" class="iii">
+                <div class="layer">
+                    <h3>Alarm Syetem</h3>
+                    <p>Protect your home with a simple alarm system using Arduino</p>
+                    <a target="_blank" href="https://github.com/Taleb1423"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/mm.png" class="iii">
+                <div class="layer">
+                    <h3>Data Analyzer</h3>
+                    <p>Analyze data for a given dataset with the ability to pridict future data with high probability of success</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+        </div>
+
+        <div class="work">
+            <img src="images/ss.png" class="iii">
+            <div class="layer">
+                <h3>Smart Irrigation Mobile Application</h3>
+                <p> Analyze real-time data for a plant and regulate water and nutriets based on the plant need</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+    </div>
+
+    </div>
+
+</div>
+        
+    <p class="btn" id="toggleButton" >See More</p>
+
+</div>
+</div>
+
+<!------- CONTACT SECTION ----------->
+
+<section id="contact">
     <div class="container">
       <h1>Let us work together</h1>
       
+      <p><i class="fa-solid fa-phone"></i> <span>+961 79166985</span></p>
+      <p><i class="fas fa-envelope-open-text fa-1x"></i> <span>taleb.elhousseiny@gmail.com</span></p>
+
       <div class="social">
         <div>
           <a target="_blank" href="https://www.linkedin.com/in/taleb-housseiny-4499b81a4/">
             <i class="fab fa-linkedin fa-1x"></i>
             LinkedIn
           </a>
-          <a id="profile-link" target="_blank" href="https://github.com/Taleb1423">
-            <i class="fab fa-github fa-1x"></i>
-            Github
-          </a>
-    
+
           <a target="_blank" href="mailto:taleb.elhousseiny@gmail.com">
             <i class="fas fa-envelope-open-text fa-1x"></i>
             Mail
           </a>
+
+          <a id="profile-link" target="_blank" href="https://github.com/Taleb1423">
+            <i class="fab fa-github fa-1x"></i>
+            Github
+          </a>
+          
           
         </div>
       </div>
     </div>
   </section>
 
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    document.getElementById('toggleButton').addEventListener('click', function() {
+    var targetElement = document.getElementById('targetElement');
+    if (targetElement.classList.contains('hide')) {
+        targetElement.classList.remove('hide');
+        targetElement.classList.add('show');
+        document.getElementById('toggleButton').innerText = 'Show Less';
+    } else {
+        targetElement.classList.remove('show');
+        targetElement.classList.add('hide');
+        document.getElementById('toggleButton').innerText = 'Show More';
+    }
+});
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   
+
+
+</script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
  
+
+
+
+
+</body>
+</html>
