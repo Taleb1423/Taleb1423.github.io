@@ -450,7 +450,9 @@ nav .fa-solid{
         cursor: pointer;  
     }
 
-
+    #hah{
+        display: none;
+    }
 
 
 
